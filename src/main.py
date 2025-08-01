@@ -1,10 +1,7 @@
-from textnode import *
+from textnode import TextNode, TextType
 
 def main():
-    text = "This is some anchor text"
-    text_type = "link"
-    url = "https://www.boot.dev"
-    new = TextNode(text, text_type, url)
+    new = TextNode("This is some anchor text", text_type.LINK, "https://www.boot.dev")
     print(new)
     
 if __name__ == "__main__":
